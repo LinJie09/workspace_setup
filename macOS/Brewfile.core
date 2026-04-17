@@ -1,0 +1,10 @@
+tap "homebrew/core"
+tap "homebrew/cask"
+
+# 基礎工具
+brew "git"
+brew "node"
+brew "python@3.12"
+
+# 軟體介面
+cask "visual-studio-code"

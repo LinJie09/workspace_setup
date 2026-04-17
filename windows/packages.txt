@@ -1,0 +1,4 @@
+Microsoft.VisualStudioCode
+Git.Git
+NodeJS.LTS
+Python.Python.3.12
