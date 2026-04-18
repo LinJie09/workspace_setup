@@ -6,7 +6,7 @@
 $GitHubUser = if ($env:GH_USER) { $env:GH_USER } else { "ZhuangLinjie" }
 $GitHubRepo = if ($env:GH_REPO) { $env:GH_REPO } else { "mac-init" }
 $PackageListFile = "packages.txt"
-$Url = "Url = https://raw.githubusercontent.com/$GitHubUser/$GitHubRepo/main/windows/$PackageListFile"
+$Url = "https://raw.githubusercontent.com/$GitHubUser/$GitHubRepo/main/windows/$PackageListFile"
 
 Write-Host "🚀 開始執行 Windows 環境自動化安裝 (User: $GitHubUser)..." -ForegroundColor Cyan
 
