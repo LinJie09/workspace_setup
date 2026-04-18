@@ -7,14 +7,15 @@
 
 # --- 動態變數設定 ---
 # 語法解釋：${VAR:-default} 代表如果變數 GH_USER 沒有設定，則預設使用 "ZhuangLinjie"
-GITHUB_USER="${GH_USER:-ZhuangLinjie}" 
-GITHUB_REPO="${GH_REPO:-mac-init}"
+# 修改為你正確的 GitHub 資訊
+GITHUB_USER="${GH_USER:-LinJie09}"
+GITHUB_REPO="${GH_REPO:-workspace_setup}"
 GITHUB_BRANCH="${GH_BRANCH:-main}"
 BREWFILE_NAME="Brewfile.core"
 
 # 自動合成 GitHub Raw 下載網址
 # 記得加上 macOS/ 資料夾路徑
-BREWFILE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${BREWFILE_NAME}"
+BREWFILE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/macOS/${BREWFILE_NAME}"
 
 echo "🚀 開始執行環境安裝 (User: ${GITHUB_USER}, Repo: ${GITHUB_REPO})..."
 
@@ -29,6 +30,8 @@ if ! command -v brew &> /dev/null; then
     # 註解：這步是為了讓接下來的 brew 指令在當前視窗立刻生效，不需要重新開啟終端機
     if [[ -f /opt/homebrew/bin/brew ]]; then
         # Apple Silicon 路徑
+        echo >> /Users/huangyingyuan/.zprofile
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/huangyingyuan/.zprofile
         eval "$(/opt/homebrew/bin/brew shellenv)"
     elif [[ -f /usr/local/bin/brew ]]; then
         # Intel 路徑
