@@ -41,7 +41,7 @@
 以**系統管理員身分**開啟 PowerShell，執行以下指令：
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iwr -useb https://raw.githubusercontent.com/ZhuangLinjie/mac-init/main/Windows/core_setup.ps1 | iex
+Set-ExecutionPolicy Bypass -Scope Process -Force; iwr -useb https://raw.githubusercontent.com/ZhuangLinjie/mac-init/main/windows/setup_windows.ps1 | iex
 ```
 
 > ⚠️ 請確認以「系統管理員身分執行」PowerShell，否則可能因權限不足而失敗。
