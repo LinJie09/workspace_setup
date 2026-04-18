@@ -31,7 +31,7 @@
 開啟終端機（Terminal），執行以下指令：
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ZhuangLinjie/mac-init/main/macOS/core_setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/LinJie09/workspace_setup/main/macOS/core_setup.sh)"
 ```
 
 ---

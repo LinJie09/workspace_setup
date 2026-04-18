@@ -14,7 +14,7 @@ BREWFILE_NAME="Brewfile.core"
 
 # 自動合成 GitHub Raw 下載網址
 # 記得加上 macOS/ 資料夾路徑
-BREWFILE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/macOS/${BREWFILE_NAME}"
+BREWFILE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${BREWFILE_NAME}"
 
 echo "🚀 開始執行環境安裝 (User: ${GITHUB_USER}, Repo: ${GITHUB_REPO})..."
 
